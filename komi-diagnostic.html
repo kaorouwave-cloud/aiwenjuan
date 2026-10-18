@@ -274,7 +274,7 @@
       const successPanel = document.querySelector('#success-panel');
       const submitButton = document.querySelector('#submit-button');
       const submitError = document.querySelector('#submit-error');
-      const submitEndpoint = window.KOMI_SUBMIT_ENDPOINT || document.querySelector('meta[name="komi-submit-endpoint"]')?.content || '/api/submit';
+      const submitEndpoint = window.KOMI_SUBMIT_ENDPOINT || document.querySelector('<meta name="komi-submit-endpoint" content="https://aiwenjuan-komi9.vercel.app/api/submit">')?.content || '/api/submit';
       let lastResult = '';
 
       const questionComplete = (question) => {
